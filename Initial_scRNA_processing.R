@@ -191,7 +191,8 @@ W456@meta.data$mix[which(W456@meta.data$cell_class == "Erythroid" &
                            W456@meta.data$neuro > 0.2)] <- "True"
 
 W456 <- subset(W456, subset = mix == "False")
-
+saveRDS(W456, file = "./W456.rds")
+                     
 #Further annote epithelial cells
 W456@meta.data$cell_class[which(W456@meta.data$seurat_clusters == 27)] <- "Liver"
 W456@meta.data$cell_class[which(W456@meta.data$seurat_clusters %in% c(8,20))] <- "Pancreas"
@@ -330,5 +331,4 @@ W7_11@meta.data$mix[which(W7_11@meta.data$cell_class == "Neural" &
 
 W7_11 <- subset(W7_11, subset = mix == "False")
 
-#UMAP visualization
-DimPlot(W7_11, reduction = "umap", group.by = "cell_class")
+saveRDS(W7_11, file = "./W7_11.rds")
