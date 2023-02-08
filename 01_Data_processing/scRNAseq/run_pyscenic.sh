@@ -1,5 +1,4 @@
 #！ /bin/bash
-## author: Marzon
 ## pyscenic shell script
 
 #load database
