@@ -28,7 +28,6 @@ pyscenic ctx \
 	--num_workers 10 \
 	--mask_dropouts
 
-
 pyscenic aucell \
 	$input_loom \
 	reg.csv \
