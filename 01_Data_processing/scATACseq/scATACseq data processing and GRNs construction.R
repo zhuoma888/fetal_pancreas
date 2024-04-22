@@ -76,11 +76,11 @@ samples[["S98"]]$barcode <- gsub("5","1",rownames(samples[["S98"]]@meta.data))
 frag14 <- CreateFragmentObject("/cellranger-atac/S14/outs/fragments.tsv.gz",
                                cells = samples[["S14"]]$barcode)
 frag35 <- CreateFragmentObject("/cellranger-atac/S35/outs/fragments.tsv.gz",
-                               cells = samples[["S35"]]$barcode$barcode)
+                               cells = samples[["S35"]]$barcode)
 frag96 <- CreateFragmentObject("/cellranger-atac/S96/outs/fragments.tsv.gz",
-                               cells = samples[["S96"]]$barcode$barcode)
+                               cells = samples[["S96"]]$barcode)
 frag98 <- CreateFragmentObject("/cellranger-atac/S98/outs/fragments.tsv.gz",
-                               cells = samples[["S98"]]$barcode$barcode)
+                               cells = samples[["S98"]]$barcode)
 windows14 <- FeatureMatrix(
   fragments=frag14,
   features = windows,
